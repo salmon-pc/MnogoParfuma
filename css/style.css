@@ -78,6 +78,7 @@ body {
   font-family: 'fira_sanslight', sans-serif;
   color: #000;
   background: #fff;
+  min-width: 1024px;
 }
 .rsp_wrapper {
   width: 100%;
@@ -94,4 +95,52 @@ body {
 }
 .center {
   text-align: center;
+}
+.top_line_block {
+  height: 40px;
+  background: #fff;
+  font-family: 'fira_sansregular';
+  font-size: 16px;
+  line-height: 40px;
+}
+.top_line_block a {
+  color: #1b1e26;
+  text-decoration: none;
+  margin-right: 17px;
+}
+.top_line_block a:hover {
+  text-decoration: underline;
+}
+.top_line_block a.price {
+  font-family: 'fira_sansmedium';
+  padding-left: 13px;
+  background: url(../img/ico_prices.png) no-repeat left center;
+}
+.top_line_block .links {
+  float: left;
+}
+.top_line_block .auth_block {
+  float: right;
+}
+.top_line_block .auth_block a {
+  margin-left: 20px;
+  margin-right: 0;
+}
+.header_block {
+  background: #ff0d51;
+  height: 176px;
+}
+.header_block .logo {
+  position: absolute;
+  left: 0;
+  top: 29px;
+  z-index: 5;
+}
+.header_block .site_slogan {
+  position: absolute;
+  font-family: 'fira_sansregular';
+  color: #1b1e26;
+  font-size: 16px;
+  top: 76px;
+  left: 0;
 }

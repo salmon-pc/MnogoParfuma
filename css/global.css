@@ -10,6 +10,7 @@ body {
   font-family: 'fira_sanslight', sans-serif;
   color: #000;
   background: #fff;
+  min-width: 1024px;
 }
 .rsp_wrapper {
   width: 100%;
