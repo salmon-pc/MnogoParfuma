@@ -1,0 +1,298 @@
+.top_line_block {
+  height: 40px;
+  background: #fff;
+  font-family: 'fira_sansregular';
+  font-size: 16px;
+  line-height: 40px;
+  a {
+    color: #1b1e26;
+    text-decoration: none;
+    margin-right: 17px;
+    &:hover {
+      text-decoration: underline;
+    }
+    &.price {
+      font-family: 'fira_sansmedium';
+      padding-left: 12px;
+      background: url(../img/ico_prices.png) no-repeat 0 5px;
+    }
+  }
+  .links {
+    float: left;
+  }
+
+  .auth_block {
+    float: right;
+    a {
+      margin-left: 20px;
+      margin-right: 0;
+    }
+  }
+}
+
+.header_block {
+  background: #ff0d51;
+  height: 133px;
+
+  .logo {
+    position: absolute;
+    left: -9px;
+    top: 29px;
+    z-index: 5;
+  }
+
+  .site_slogan {
+    position: absolute;
+    font-family: 'fira_sansregular';
+    color: #1b1e26;
+    font-size: 16px;
+    top: 76px;
+    left: 0;
+  }
+
+  .search {
+    position: absolute;
+    top: 48px;
+    left: 385px;
+    width: 372px;
+    height: 36px;
+    .border-radius(3px, 3px, 3px, 3px);
+    background: #fff;
+
+    .search_input {
+      height: 36px;
+      width: 315px;
+      margin-left: 15px;
+      float: left;
+
+      input {
+        font-family: 'fira_sansregular';
+        width: 100%;
+        outline: none;
+        color: #798692;
+        font-size: 16px;
+        height: 37px;
+        line-height: 36px;
+        background: none;
+      }
+    }
+
+    .search_button {
+      width: 36px;
+      height: 36px;
+      background: url(../img/ico_search.png) no-repeat center;
+      float: right;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+
+  .phones {
+    position: absolute;
+    right: 0;
+    top: 27px;
+    text-align: right;
+    font-family: 'fira_sansregular';
+    font-size: 16px;
+
+    span {
+      display: block;
+      height: 15px;
+    }
+
+    b {
+      display: block;
+      height: 37px;
+      font-size: 32px;
+      color: #fff;
+      font-weight: normal;
+    }
+
+    a {
+      display: inline-block;
+      position: relative;
+      height: 19px;
+      color: #fff;
+      text-decoration: none;
+      border-bottom: dashed 1px #fff;
+
+      &:hover {
+        border-bottom: none;
+      }
+
+      &:before {
+        display: block;
+        position: absolute;
+        top: 7px;
+        left: -14px;
+        content: "";
+        width: 10px;
+        height: 12px;
+        background: url(../img/ico_phone.png) no-repeat left;
+      }
+
+    }
+  }
+
+}
+
+.alphabet_line_block {
+  height: 43px;
+  background: url(../img/alph_line.png) repeat-x top #ff0c51;
+
+  .brands_line {
+    width: 755px;
+    text-align: justify;
+    line-height: 45px;
+    height: 43px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'fira_sansregular';
+    text-transform: uppercase;
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 0px;
+      visibility: hidden;
+      overflow: hidden;
+      display: inline-block;
+    }
+
+    a {
+      color: #1b1e26;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .basket_block {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    padding: 0 35px 0 20px;
+    margin-top: 3px;
+    text-transform: uppercase;
+    font-family: 'fira_sansregular';
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    .box-shadow(0, 0, 35px, #ff5384, inset);
+
+    span.count {
+      display: inline-block;
+      margin: 0 2px;
+      color: #1b1e26;
+      background: #fff;
+      min-width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 24px;
+      .border-radius(12px, 12px, 12px, 12px)
+    }
+
+    span.cost {
+      display: inline-block;
+      position: relative;
+
+      &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 9px;
+        height: 11px;
+        background: url(../img/ico_rub.png) no-repeat;
+        right: -15px;
+        top: 14px;
+      }
+    }
+  }
+}
+
+.menu_line_block {
+  z-index:10;
+  height: 40px;
+  background: #1b1e26;
+  font-family: 'fira_sansregular';
+  line-height: 40px;
+
+  ul.main_menu {
+    list-style-type: none;
+    min-width: 787px;
+    margin-left: -13px;
+
+    li {
+      display: inline-block;
+      position: relative;
+      font-size: 16px;
+      line-height: 40px;
+
+      &:hover {
+        a {
+          background: #000;
+        }
+        a.action{
+          background: url(../img/ico_gift.png) no-repeat 16px 9px #000;
+        }
+        ul{
+          display: block;
+        }
+      }
+
+      &.current{
+        a{
+          text-decoration: underline;
+        }
+      }
+
+      a {
+        display: block;
+        padding: 0 13px;
+        height: 40px;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+
+        &.action{
+          color: #ff0d51;
+          padding-left: 33px;
+          background: url(../img/ico_gift.png) no-repeat 16px 9px;
+
+        }
+
+      }
+
+      ul{
+        display: none;
+        z-index: 10;
+        width:190px;
+        position: absolute;
+        padding:15px 20px;
+        top:40px;
+        left:-12px;
+        background: #000;
+        line-height:30px;
+
+        li{
+          line-height: 30px;
+          a{
+            padding:0;
+            height:auto;
+            line-height:auto;
+            font-family: 'fira_sanslight';
+            text-transform: none;
+            letter-spacing: 0em;
+
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

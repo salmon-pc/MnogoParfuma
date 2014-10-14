@@ -5,55 +5,7 @@
 */
 @import "fonts";
 @import "global";
+@import "header";
+@import "footer";
 
-.top_line_block {
-  height: 40px;
-  background: #fff;
-  font-family: 'fira_sansregular';
-  font-size: 16px;
-  line-height: 40px;
-  a {
-    color: #1b1e26;
-    text-decoration: none;
-    margin-right: 17px;
-    &:hover {
-      text-decoration: underline;
-    }
-    &.price {
-      font-family: 'fira_sansmedium';
-      padding-left: 13px;
-      background: url(../img/ico_prices.png) no-repeat left center;
-    }
-  }
-  .links {
-    float: left;
-  }
-
-  .auth_block {
-    float: right;
-    a {
-      margin-left: 20px;
-      margin-right: 0;
-    }
-  }
-}
-
-.header_block {
-  background: #ff0d51;
-  height:176px;
-
-  .logo{
-    position: absolute;
-    left:0;
-    top:29px;
-    z-index:5;
-  }
-  .site_slogan{
-    position: absolute;
-    font-family: 'fira_sansregular';
-    color:#1b1e26;
-    font-size: 16px;
-    top: 76px;
-    left:0;
-  }
-}
+@import "content";

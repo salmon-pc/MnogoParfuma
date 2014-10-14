@@ -1,0 +1,126 @@
+
+
+.footer_block{
+  margin-top:55px;
+  padding:95px 0 25px 0;
+  background: #1b1e26;
+  overflow:hidden;
+  z-index:5;
+
+  &:after{
+    display: block;
+    content: "";
+    position: absolute;
+    width:14000px;
+    height:14000px;
+    top:-13965px;
+    left:50%;
+    margin-left:-7000px;
+    background: #fff;
+    .border-radius(0,0,14000px,14000px);
+  }
+
+  .bottom_menu{
+    .column{
+      float:left;
+      margin-right:60px;
+
+      a{
+        display: block;
+        text-decoration: none;
+        font-size:16px;
+        color:#6b7181;
+        line-height:30px;
+
+        &:hover{
+          text-decoration: underline;
+          color:#a7afc2;
+        }
+
+        &.section_link{
+          font-family: 'fira_sansregular';
+          color:#fff;
+          font-size:24px;
+          line-height:36px;
+          margin-bottom: 5px;
+        }
+        &.empty_link{
+          height: 36px;
+          color:#fff;
+          font-size:24px;
+          line-height:36px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+.under_footer_block{
+  padding:40px 0;
+  background: url(../img/footer_line.png) repeat-x top #1b1e26;
+
+  .column{
+    float:left;
+    margin-right:85px;
+
+    a{
+      display: block;
+      position: relative;
+      color:#fff;
+      font-size:16px;
+      font-family: 'fira_sansregular';
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      line-height: 30px;
+
+      &.action{
+        color:#e90345;
+        &:after{
+          display: block;
+          content: "";
+          position: absolute;
+          left: -22px;
+          top: 5px;
+          width:14px;
+          height:15px;
+          background: url(../img/ico_gift.png) no-repeat;
+        }
+      }
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .contacts{
+    float:right;
+    text-align: right;
+    font-family: 'fira_sansregular';
+    font-size: 16px;
+
+    img{
+      margin-right: 4px;
+      position: relative;
+    }
+
+    span {
+      display: block;
+      height: 15px;
+      color:#6b7181;
+      font-family: 'fira_sanslight';
+      margin-top: 8px;
+    }
+
+    b {
+      display: block;
+      height: 37px;
+      font-size: 36px;
+      color: #fff;
+      font-weight: normal;
+      margin-top: -28px;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.main_slider_block{
+  height:580px;
+  overflow: hidden;
+  z-index:5;
+
+  .features{
+    height:95px;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    top:0;
+    background: rgba(255, 255, 255, 0.81);
+
+    .feature{
+      float:left;
+      margin-right:95px;
+      text-transform: uppercase;
+      font-family: 'fira_sansmedium';
+      color:#1b1e26;
+      font-size:18px;
+      text-align: left;
+      margin-top: 27px;
+      letter-spacing: 0.05em;
+
+      &:last-child{
+        margin-right:0;
+      }
+
+      b{
+        font-weight: normal;
+        font-size:30px;
+        display: block;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .slides_wrapper{
+    position: absolute;
+    width:14000px;
+    height:14000px;
+    bottom:40px;
+    left:50%;
+    margin-left:-7000px;
+    overflow: hidden;
+    .border-radius(0,0,14000px,14000px);
+
+    .slides{
+      position: absolute;
+      bottom:0px;
+      height:540px;
+      width:100%;
+      text-align:center;
+    }
+  }
+
+  .slide{
+    position: absolute;
+    height: 540px;
+    width: 100%;
+    &.hide{
+      display: none;
+    }
+  }
+
+  .slides_content{
+    width:1020px;
+    height:580px;
+    margin:auto;
+    position: relative;
+
+    .slide{
+      height: 580px;
+      z-index:10;
+    }
+
+    .dop_pic{
+      display: block;
+      position: absolute;
+      right:0;
+      bottom:0;
+      z-index:15;
+    }
+
+    .prev{
+      display: block;
+      position: absolute;
+      left: -109px;
+      top: 278px;
+      width:72px;
+      height:72px;
+      background: url(../img/arrows.png) no-repeat 0 -72px;
+    }
+
+    .next{
+      display: block;
+      position: absolute;
+      right: -109px;
+      top: 278px;
+      width:72px;
+      height:72px;
+      background: url(../img/arrows.png) no-repeat 0 0;
+    }
+  }
+
+}
