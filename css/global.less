@@ -35,10 +35,16 @@ html, body {
   text-align: center;
 }
 
-.box-shadow(@fp,@sp,@tp,@color,@inset){
-  box-shadow: @fp @sp @tp @color @inset;
-  -webkit-box-shadow: @fp @sp @tp @color @inset;
-  -moz-box-shadow: @fp @sp @tp @color @inset;
+.box-shadow(@fp,@sp,@tp,@color){
+  box-shadow: @fp @sp @tp @color;
+  -webkit-box-shadow: @fp @sp @tp @color ;
+  -moz-box-shadow: @fp @sp @tp @color;
+  behavior: url(/PIE.htc);
+}
+.box-shadow-inset(@fp,@sp,@tp,@color){
+  box-shadow: @fp @sp @tp @color inset;
+  -webkit-box-shadow: @fp @sp @tp @color inset;
+  -moz-box-shadow: @fp @sp @tp @color inset;
   behavior: url(/PIE.htc);
 }
 .border-radius(@fp,@sp,@tp,@fop){
