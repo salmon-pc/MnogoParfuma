@@ -613,7 +613,7 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 24px !important;
 
   color: #fff !important;
   font-family: 'fira_sansregular';
@@ -655,11 +655,50 @@
 
     &.left {
       float: left;
+
+      &.small{
+        float:left;
+        margin-right:30px;
+        width:405px;
+      }
     }
 
     &.right {
       float: right;
     }
+  }
+
+  .socials{
+    a{
+      display: block;
+      width:60px;
+      height:60px;
+      float:left;
+      margin-right:12px;
+      &.vk{
+        background: url(../img/ico_vk.png) no-repeat;
+      }
+      &.fb{
+        background: url(../img/ico_fb.png) no-repeat;
+      }
+      &.tw{
+        background: url(../img/ico_tw.png) no-repeat;
+      }
+      &.od{
+        background: url(../img/ico_od.png) no-repeat;
+      }
+      &.gp{
+        background: url(../img/ico_gp.png) no-repeat;
+      }
+    }
+  }
+
+  .s_text{
+    color:#000;
+    font-size:18px;
+    font-family: 'fira_sansregular';
+    line-height: 26px;
+    margin-bottom: 30px;
   }
 
   .f_title {
@@ -788,6 +827,8 @@
   .box-shadow(0, 0, 10px, rgba(30, 15, 15, 0.67));
   font-family: 'fira_sansregular';
 
+
+
   .f_title {
     color: #fff;
     font-size: 24px;
@@ -886,6 +927,9 @@
       .item {
         input[type=checkbox] {
           display: none;
+        }
+        .jq-checkbox{
+          display: none !important;
         }
         label {
           display: inline-block;
@@ -1515,6 +1559,367 @@
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+.personal_form{
+  width:100%;
+  position: relative;
+  padding-bottom: 65px;
+  margin-bottom: 43px;
+
+  .login_form{
+    width:405px;
+  }
+
+  .f_title{
+    color:#000;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom:10px;
+  }
+
+  .bottom_shadow {
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    bottom: 0px;
+    overflow: hidden;
+
+    &:after{
+      display: block;
+      content: "";
+      position: absolute;
+      width: 14000px;
+      height: 13930px;
+      top: 35px;
+      left: 50%;
+      margin-left: -7000px;
+      background: #E1E5E8;
+      .border-radius(7000px,7000px,0,0);
+      .box-shadow(0,0,35px,#6b7074);
+    }
+  }
+
+  .addMoreAdress{
+    text-align: center;
+    margin-top: 45px;
+
+    a{
+      display: inline-block;
+      position: relative;
+      height:35px;
+      margin-left: 45px;
+      color:#cdd2e1;
+      font-size:30px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom:dashed 2px #cdd2e1;
+      text-decoration: none;
+
+
+      &:after{
+        display: block;
+        content: "";
+        width:30px;
+        height: 30px;
+        position: absolute;
+        top:5px;
+        left:-40px;
+        background: url(../img/ico_plus.png) no-repeat;
+
+      }
+    }
+
+  }
+}
+
+.orders_history{
+  margin:10px 0;
+  .order{
+    padding:40px 40px 30px 40px;
+    position: relative;
+    .border-radius(3px,3px,3px,3px);
+    .box-shadow(0,0,10px,#e9e9ea);
+    margin-bottom: 40px;
+
+    .delete{
+      display: none;
+      position: absolute;
+      top: 10px;
+      right: 27px;
+      color: #6b7181;
+      font-size: 16px;
+      padding-right: 15px;
+      background: url(../img/delete.png) no-repeat right center;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+
+    &.current{
+      .order_head{
+        .number{
+          border:none;
+          color:#000;
+          &:after{
+            display: none;
+          }
+        }
+      }
+      .delete{
+        display: block;
+      }
+      .order_head{
+        .statuses{
+          display: none;
+        }
+      }
+      .order_body{
+        display: block;
+      }
+    }
+
+    &.opened{
+      .order_head{
+        .number{
+          &:after{
+            background-position: 0 0 ;
+          }
+        }
+      }
+      .delete{
+        display: block;
+      }
+      .order_head{
+        .statuses{
+          display: none;
+        }
+      }
+      .order_body{
+        display: block;
+      }
+    }
+
+    .order_head{
+      .number{
+        color:#ff0d51;
+        font-size:30px;
+        letter-spacing:0.05em;
+        text-transform: uppercase;
+        display: block;
+        float: left;
+        position: relative;
+        border-bottom: dashed 1px #ff0d51;
+        line-height: 24px;
+        cursor: pointer;
+
+
+
+        &:after{
+          display: block;
+          content: "";
+          position: absolute;
+          top: 7px;
+          right: -20px;
+          width:5px;
+          height:4px;
+          background: url(../img/ico_opener.png) no-repeat 0 -4px ;
+        }
+      }
+      .statuses{
+        float:right;
+        text-transform: uppercase;
+        font-size: 18px;
+
+        b{
+          font-family: 'fira_sansmedium';
+          font-weight: normal;
+        }
+
+        .del{
+          margin-left:50px;
+        }
+
+        .cost{
+          margin-left:25px;
+        }
+
+        .price{
+          display: inline-block;
+          position: relative;
+          font-family: 'fira_sansmedium';
+          font-weight: normal;
+          margin-right:15px;
+          &:after {
+            display: block;
+            content: "";
+            position: absolute;
+            width: 9px;
+            height: 11px;
+            background: url(../img/ico_rub_big.png) no-repeat;
+            background-size: cover;
+            right: -15px;
+            top: 7px;
+          }
+        }
+      }
+    }
+
+    .order_body{
+      margin-top: 35px;
+      display: none;
+      .statuses{
+        text-transform: uppercase;
+        font-size: 24px;
+        letter-spacing: 0.05em;
+        .status{
+          display: block;
+          width:300px;
+          float:left;
+        }
+        b{
+          font-family: 'fira_sansmedium';
+          font-weight: normal;
+        }
+      }
+
+      .products_list{
+        margin-top: 30px;
+
+        .f_title{
+          text-transform: uppercase;
+          font-size: 24px;
+          letter-spacing: 0.05em;
+          margin-bottom: 15px;
+        }
+
+        .ord_product {
+          margin-bottom: 8px;
+
+          a {
+            display: block;
+            float:left;
+            width:660px;
+            padding-top: 5px;
+            font-family: 'fira_sansregular';
+            color: #000;
+            font-size: 18px;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+          .num_cost {
+            float:right;
+            width:230px;
+            line-height: 17px;
+            padding-top: 10px;
+            span {
+              display: block;
+              width:90px;
+              float: left;
+              font-size: 16px;
+              text-align: right;
+            }
+
+            .price {
+              width:115px;
+              text-align: right;
+              display: inline-block;
+              position: relative;
+              margin-right: 15px;
+              font-size:18px;
+              font-family: 'fira_sansmedium';
+              &:after {
+                display: block;
+                content: "";
+                position: absolute;
+                width: 9px;
+                height: 11px;
+                background: url(../img/ico_rub_big.png) no-repeat;
+                background-size: cover;
+                right: -15px;
+                top: 2px;
+              }
+            }
+
+            &:after {
+              display: block;
+              content: "";
+              clear: both;
+            }
+          }
+
+          .f_img {
+            float: left;
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+            text-align: center;
+            margin-right: 5px;
+            img {
+              max-width: 100%;
+              max-height: 100%;
+
+            }
+          }
+        }
+      }
+
+      .total_line{
+        text-align: right;
+        font-size:24px;
+        line-height: 43px;
+        .dev_cost{
+          .price{
+            display: inline-block;
+            position: relative;
+            font-weight: normal;
+            margin-right:15px;
+            &:after {
+              display: block;
+              content: "";
+              position: absolute;
+              width: 13px;
+              height: 16px;
+              background: url(../img/ico_rub_big.png) no-repeat;
+              background-size: cover;
+              right: -18px;
+              top: 11px;
+            }
+          }
+        }
+        .total_cost{
+          font-size:36px;
+          margin-left: 30px;
+          .price{
+            display: inline-block;
+            position: relative;
+            font-weight: normal;
+            margin-right: 32px;
+            &:after {
+              display: block;
+              content: "";
+              position: absolute;
+              width: 19px;
+              height: 25px;
+              background: url(../img/ico_rub_big.png) no-repeat;
+              background-size: cover;
+              right: -26px;
+              top: 7px;
+            }
+          }
+        }
+      }
+
+    }
+    .buttons{
+      margin-top:30px;
     }
   }
 }
